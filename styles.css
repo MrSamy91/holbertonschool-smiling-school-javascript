@@ -37,7 +37,8 @@
 
 .btn:hover,
 .btn:active {
-  opacity: var(--opacity-value);
+  opacity: 0.9;
+  transition: opacity 0.3s ease;
 }
 
 /* Header / Hero Styles */
@@ -899,4 +900,165 @@
   .results .card {
     width: 90vw;
   }
+}
+
+/* Styles de base (mobile first) */
+/* ... styles existants ... */
+
+/* Tablette */
+@media screen and (min-width: 576px) and (max-width: 767px) {
+    /* Styles spécifiques tablette */
+}
+
+/* Desktop */
+@media screen and (min-width: 768px) {
+    /* Styles spécifiques desktop */
+}
+
+/* Loader styles */
+.loader {
+    border: 10px solid #f3f3f3;
+    border-top: 10px solid #C271FF;
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    animation: spin 2s linear infinite;
+    margin: auto;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Styles pour la section quotes */
+.section-quotes {
+    background-color: #C271FF;
+    padding: 100px 0;
+}
+
+.carousel-item {
+    padding: 20px;
+}
+
+.testimonial {
+    margin: 0;
+    padding: 20px;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    width: 5%;
+}
+
+/* Styles pour les cartes de tutoriels */
+.section-tutorials {
+    padding: 60px 0;
+}
+
+.tutorial-card {
+    margin: 10px;
+    border: none;
+    transition: transform 0.3s ease;
+}
+
+.tutorial-card:hover {
+    transform: scale(1.02);
+}
+
+.card-img-top {
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.play-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0.8;
+    transition: opacity 0.3s ease;
+}
+
+.tutorial-card:hover .play-icon {
+    opacity: 1;
+}
+
+.purple-text {
+    color: #C271FF;
+}
+
+/* Responsive Carousel */
+@media (min-width: 768px) {
+    .carousel-inner .carousel-item-right.active,
+    .carousel-inner .carousel-item-next {
+        transform: translateX(25%);
+    }
+    
+    .carousel-inner .carousel-item-left.active,
+    .carousel-inner .carousel-item-prev {
+        transform: translateX(-25%);
+    }
+}
+
+@media (max-width: 767px) {
+    .carousel-inner .carousel-item-right.active,
+    .carousel-inner .carousel-item-next {
+        transform: translateX(50%);
+    }
+    
+    .carousel-inner .carousel-item-left.active,
+    .carousel-inner .carousel-item-prev {
+        transform: translateX(-50%);
+    }
+}
+
+@media (max-width: 575px) {
+    .carousel-inner .carousel-item-right.active,
+    .carousel-inner .carousel-item-next {
+        transform: translateX(100%);
+    }
+    
+    .carousel-inner .carousel-item-left.active,
+    .carousel-inner .carousel-item-prev {
+        transform: translateX(-100%);
+    }
+}
+
+.carousel-inner .carousel-item-right,
+.carousel-inner .carousel-item-left {
+    transform: translateX(0);
+}
+
+/* Styles pour les sections de vidéos */
+.section-latest-videos {
+    padding: 60px 0;
+    background: #fff;
+}
+
+.video-card {
+    margin: 10px;
+    border: none;
+    transition: transform 0.3s ease;
+}
+
+.video-card:hover {
+    transform: scale(1.02);
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+/* Loader spécifique pour les vidéos */
+.latest-videos-loader {
+    margin: 40px auto;
+}
+
+/* Responsive adjustments */
+@media (max-width: 767px) {
+    .section-latest-videos {
+        padding: 30px 0;
+    }
+    
+    .video-card {
+        margin: 5px;
+    }
 }

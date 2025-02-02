@@ -75,3 +75,24 @@ The Holberton Smiling School web pages were developed by sections using the Boot
 # Author:
 
 Jhoan Zamora: [jzamora5](https://github.com/jzamora5)
+
+# Holberton Smiling School (Javascript)
+
+A web implementation with Bootstrap and Javascript of a design from Figma.
+
+## Description
+This project implements a design from scratch using Bootstrap and Javascript with the following features:
+- Responsive design
+- Bootstrap integration
+- Javascript integration
+- Accessibility
+- Mobile-first design
+
+## Author
+- [Samy Myself]
+
+## Requirements
+- You have to use Bootstrap
+- Your `styles.css` must be as small as possible
+- You have to use JQuery
+- Your `scripts.js` must contain all your Javascript code
